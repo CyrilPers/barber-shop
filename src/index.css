@@ -27,7 +27,6 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-
 h1,
 p {
   margin: 5px;
@@ -39,7 +38,13 @@ p {
 }
 
 h1 {
-  font-size: 22px;
+  font-size: 24px;
   font-weight: 600;
+  font-family: Inter, Helvetica, sans-serif;
+}
+
+h2 {
+  font-size: 20px;
+  font-weight: 300;
   font-family: Inter, Helvetica, sans-serif;
 }
