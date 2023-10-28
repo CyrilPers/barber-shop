@@ -47,7 +47,7 @@ const TextInputStyled = styled.div`
     border: none;
     align-items: center;
     width: 100%; 
-    color: black;
+    color: ${theme.colors.black};
 
 
     &::placeholder {

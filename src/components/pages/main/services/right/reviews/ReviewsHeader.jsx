@@ -1,19 +1,19 @@
 import React from 'react'
 import styled from 'styled-components';
-import { theme } from '../../../../../theme';
+import { theme } from '../../../../../../theme';
 
-export default function Reviews() {
+export default function ReviewsHeader() {
     return (
-        <ReviewsStyled>
+        <ReviewsHeaderStyled>
             <div className="choose">
                 <div className='note'>Note globale</div>
                 <div className='avis'>Avis</div>
             </div>
-        </ReviewsStyled>
+        </ReviewsHeaderStyled>
     )
 }
 
-const ReviewsStyled = styled.div`
+const ReviewsHeaderStyled = styled.div`
 background-color: white;
 border-radius: ${theme.borderRadius.midRound} ${theme.borderRadius.midRound} 0 0;
 width: 100%;

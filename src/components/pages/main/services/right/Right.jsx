@@ -1,13 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
-import Reviews from './Reviews';
-import Global from './reviews/Global';
+import ReviewsBlock from './ReviewsBlock';
+import Times from './Times';
 
 export default function Right() {
     return (
         <RightStyled>
-            <Reviews />
-            <Global />
+            <ReviewsBlock />
+            <Times />
         </RightStyled>
     )
 }

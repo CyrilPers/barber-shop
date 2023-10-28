@@ -37,7 +37,7 @@ const extraPrimaryStyle = css`
 
   &:hover {
     color: ${theme.colors.lowBlack};
-    background-color: ${theme.colors.black};
+    background-color: ${theme.colors.greyLight};
     border: 1px solid ${theme.colors.lowBlack};
     transition: all 200ms ease-out;
   }

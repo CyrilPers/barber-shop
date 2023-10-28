@@ -21,6 +21,6 @@ const NavbarStyled = styled.nav`
   justify-content: space-between;
   background-color: ${theme.colors.white};
   .logo {
-    h1{color: black;}
+    h1{color: ${theme.colors.black};}
   }
 `;

@@ -25,7 +25,7 @@ export default function Title() {
 const TitleStyled = styled.div`
   display: flex;
   flex-direction: column;
-  color: black;
+  color: ${theme.colors.black};
   .icon {
     position: relative;
     bottom: -2px;
