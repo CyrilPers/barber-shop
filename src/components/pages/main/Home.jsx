@@ -1,9 +1,9 @@
 import React from 'react'
 import styled from 'styled-components';
-import Navbar from '../../header/Navbar.jsx'
 import { Route, Routes } from 'react-router-dom';
 import Services from './Services.jsx';
 import { theme } from '../../../theme/index.jsx';
+import Navbar from '../../header/Navbar.jsx';
 
 
 export default function Main() {
@@ -21,7 +21,7 @@ export default function Main() {
 
 const MainStyled = styled.div`
 width: 100%;
-height: 100vh;
+min-height: 100vh;
 display: flex;
 flex-direction: column;
 justify-content: center;

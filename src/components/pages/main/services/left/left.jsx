@@ -25,5 +25,7 @@ export default function Left() {
 }
 
 const LeftStyled = styled.section`
-width: 60%;
+width: 70%;
+box-sizing: border-box;
+padding-right: 20px;
 `;

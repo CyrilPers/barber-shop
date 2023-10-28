@@ -2,6 +2,7 @@ import React from 'react'
 import LoginForm from './LoginForm.jsx'
 import { styled } from 'styled-components'
 import Logo from '../../reusable-ui/Logo.jsx'
+import index from '../../../index.css'
 import { theme } from '../../../theme/index.jsx'
 
 
@@ -29,7 +30,8 @@ const LoginPageStyled = styled.div`
     .logo-login-page {
       transform: scale(3);
       h1 {
-        text-shadow: 1px 0 20px #ffffff; /* Effet d'ombre */
+        text-shadow: 1px 0px 10px #ffffff; /* Effet d'ombre */
+
       }
     }
 

@@ -16,6 +16,7 @@ const ButtonStyled = styled.button`
 `
 
 const extraPrimaryStyle = css`
+  cursor: pointer;
   width: 100%;
   border: 1px solid red;
   display: inline-flex;
@@ -35,13 +36,13 @@ const extraPrimaryStyle = css`
   border: 1px solid ${theme.colors.lowBlack};
 
   &:hover {
-    color: ${theme.colors.primary};
-    background-color: ${theme.colors.white};
-    border: 1px solid ${theme.colors.primary};
+    color: ${theme.colors.lowBlack};
+    background-color: ${theme.colors.black};
+    border: 1px solid ${theme.colors.lowBlack};
     transition: all 200ms ease-out;
   }
   &:active {
-    background-color: ${theme.colors.primary};
+    background-color: ${theme.colors.lowBlack};
     color: ${theme.colors.white};
   }
 
@@ -51,50 +52,12 @@ const extraPrimaryStyle = css`
     z-index: 2;
   }
 
-  &.with-focus {
-    border: 1px solid white;
-    background-color: ${theme.colors.white};
-    color: ${theme.colors.primary};
-    :hover {
-      color: ${theme.colors.white};
-      background-color: ${theme.colors.primary};
-      border: 1px solid ${theme.colors.white};
-    }
-    &:active {
-      background-color: ${theme.colors.white};
-      color: ${theme.colors.primary};
-    }
-  }
-
   .icon {
     display: flex;
     justify-content: center;
     align-items: center;
   }
  `
-
-const extraSuccessStyle = css`
-  cursor: pointer;
-  color: ${theme.colors.white};
-  background: ${theme.colors.success};
-  border: 1px solid ${theme.colors.success};
-  border-radius: ${theme.borderRadius.midRound};
-  height: 35px;
-  padding: 0 1.5em;
-  font-weight: ${theme.fonts.weights.semiBold};
-  &:hover {
-    background: ${theme.colors.white};
-    color: ${theme.colors.success};
-    border: 1px solid ${theme.colors.success};
-  }
-  &:active {
-    color: ${theme.colors.white};
-    background: ${theme.colors.success};
-    border: 1px solid ${theme.colors.success};
-  }
-`
-
 const extraStyle = {
   default: extraPrimaryStyle,
-  success: extraSuccessStyle,
 }

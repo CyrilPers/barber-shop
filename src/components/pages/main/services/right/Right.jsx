@@ -1,13 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
+import Reviews from './Reviews';
+import Global from './reviews/Global';
 
 export default function Right() {
     return (
-        <RightStyled>Right</RightStyled>
+        <RightStyled>
+            <Reviews />
+            <Global />
+        </RightStyled>
     )
 }
 
 const RightStyled = styled.section`
-border: 1px solid green;
-width: 40%;
-`;
+width: 30%;
+box-sizing: border-box;
+padding-left: 20px;
+display: flex;
+flex-direction: column;
+`

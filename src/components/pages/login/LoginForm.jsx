@@ -5,6 +5,7 @@ import { IoChevronForward } from "react-icons/io5";
 import { BsPersonCircle } from "react-icons/bs"
 import TextInput from '../../reusable-ui/TextInput.jsx'
 import Button from '../../reusable-ui/Button.jsx';
+import index from '../../../index.css'
 import { theme } from '../../../theme/index.jsx'
 import { fadeInFromBottomLog } from '../../../theme/animations';
 
@@ -33,7 +34,7 @@ export default function LoginForm() {
   return (
     <LoginFormStyled action="submit" onSubmit={handleSubmit}>
       <div>
-        <h1>PRENDRE RENDEZ-VOUS</h1>
+        <h1>BIENVENUE</h1>
         <hr />
         <h2>Connectez-vous</h2>
       </div>
@@ -67,23 +68,21 @@ const LoginFormStyled = styled.form`
 
 
   hr{
-    border: 1.5px solid ${theme.colors.white};
+    border: 1.5px solid ${theme.colors.greyLight};
     margin-bottom: 40px;
 
   }
 
   h1{
     margin-top: 50px;
+    margin-bottom: 20px;
     font-size: ${theme.fonts.size.P3};
-    color: ${theme.colors.white};
-    font-weight: ${theme.fonts.weights.bold}
+    color: ${theme.colors.greyLight};
+    font-weight: ${theme.fonts.weights.medium};
   }
 
   h2{
-    font-size: ${theme.fonts.size.P2};
-    color: ${theme.colors.white};
-    font-weight: ${theme.fonts.weights.light}
-
+    color: ${theme.colors.greyLight};
   }  
 
   .input-login {

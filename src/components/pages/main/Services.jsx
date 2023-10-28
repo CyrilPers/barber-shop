@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 import { theme } from '../../../theme';
 import Header from './services/Header.jsx';
-import Pictures from './services/Pictures';
+import Pictures from './services/Pictures.jsx';
 import Main from './services/main';
 import Title from './services/Title';
 
 export default function Book() {
-
 
   return (
     <BookStyled>
@@ -26,7 +25,6 @@ const BookStyled = styled.div`
   box-sizing: border-box;
   padding: 30px 15%;
   width: 100%;
-  height: 100%;
   background-color: ${theme.colors.background_white};
   .rdv {
   width: 130px;
