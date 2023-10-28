@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../../theme';
 import Header from './services/Header.jsx';
 import Pictures from './services/Pictures.jsx';
-import Main from './services/main';
+import Main from './services/Main.jsx';
 import Title from './services/Title';
 
 export default function Book() {

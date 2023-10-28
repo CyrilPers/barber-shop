@@ -14,10 +14,12 @@ export default function Times() {
 
 const TimesStyled = styled.div`
     margin-top: 10px;
+    display: flex;
+    flex-direction: column;
     h1{
     font-size: ${theme.fonts.size.P3};
     font-weight: ${theme.fonts.weights.medium};
+    margin-bottom: 10px;
     }
-    display: flex;
-    flex-direction: column;
+
 `;

@@ -17,6 +17,7 @@ export default function Infos() {
 
 
 const InfosStyled = styled.div`
+padding-top: 10px;
   display: flex;
   flex-direction: column;
   width: 80%;
