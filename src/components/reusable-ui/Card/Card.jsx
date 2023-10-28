@@ -1,8 +1,8 @@
 import React from 'react'
 import styled from 'styled-components';
-import { theme } from '../../theme';
-import Right from './Card/Right';
-import Left from './Card/Left';
+import { theme } from '../../../theme';
+import Right from './Right.jsx';
+import Left from './Left.jsx';
 
 export default function Card({ id, name, description, time, price }) {
     return (

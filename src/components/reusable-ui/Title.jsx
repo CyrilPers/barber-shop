@@ -2,7 +2,7 @@ import React from 'react'
 import { theme } from '../../theme';
 import styled from 'styled-components';
 import { MdOutlinePlace } from 'react-icons/md'
-import { AiOutlineStar } from 'react-icons/ai';
+import { AiOutlineStar } from 'react-icons/ai'
 import { useNavigate } from 'react-router-dom';
 
 

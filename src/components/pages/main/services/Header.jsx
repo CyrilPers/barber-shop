@@ -12,7 +12,6 @@ export default function Header() {
     )
 }
 
-
 const HeaderStyled = styled.div`
   display: flex;
   justify-content: space-between;

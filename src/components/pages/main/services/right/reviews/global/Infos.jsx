@@ -1,18 +1,18 @@
 import React from 'react'
-import { AiFillStar } from 'react-icons/Ai'
+import { AiFillStar } from 'react-icons/ai'
 import { theme } from '../../../../../../../theme';
 import styled from 'styled-components';
 
 export default function Infos() {
-    return (
-        <InfosStyled>
-            <p className='detail'>Accueil 5,0 <AiFillStar className='icon' /> </p>
-            <p className='detail'>Propreté 4,9 <AiFillStar className='icon' /></p>
-            <p className='detail'>Cadre & Ambiance 5,0 <AiFillStar className='icon' /></p>
-            <p className='detail'>Qualité de la prestation 4,9,0 <AiFillStar className='icon' /></p>
-            <p className='people'>46 clients ont donné leur avis</p>
-        </InfosStyled>
-    )
+  return (
+    <InfosStyled>
+      <p className='detail'>Accueil 5,0 <AiFillStar className='icon' /> </p>
+      <p className='detail'>Propreté 4,9 <AiFillStar className='icon' /></p>
+      <p className='detail'>Cadre & Ambiance 5,0 <AiFillStar className='icon' /></p>
+      <p className='detail'>Qualité de la prestation 4,9,0 <AiFillStar className='icon' /></p>
+      <p className='people'>46 clients ont donné leur avis</p>
+    </InfosStyled>
+  )
 }
 
 

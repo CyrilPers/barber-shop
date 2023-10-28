@@ -1,11 +1,13 @@
 import React from 'react'
 import styled from 'styled-components';
 import { theme } from '../../../../../theme';
+import TimesBlock from './times/TimesBlock';
 
 export default function Times() {
     return (
         <TimesStyled>
             <h1>Horraires d'ouverture</h1>
+            <TimesBlock />
         </TimesStyled>
     )
 }

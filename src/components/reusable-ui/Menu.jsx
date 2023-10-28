@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { theme } from '../../theme/index.jsx'
-import Card from './Card.jsx';
+import Card from './card/Card.jsx';
 
 export default function Menu({ label, services }) {
     return (
