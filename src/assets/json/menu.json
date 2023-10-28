@@ -1,0 +1,108 @@
+{
+  "FORFAITS": [
+    {
+      "Forfait Coupe + barbe": {
+        "description": "coupe classique + barbe classique",
+        "temps": "45mins",
+        "prix": "28€"
+      }
+    },
+    {
+      "Forfait PREMIUM": {
+        "description": "coupe premium + barbe Premium + soin visage premium",
+        "temps": "1h35",
+        "prix": "80€"
+      }
+    }
+  ],
+  "COIFFURE": [
+    {
+      "coupe classique": {
+        "description": "diagnostic, coiffure et coiffage",
+        "temps": "30mins",
+        "prix": "20€"
+      }
+    },
+    {
+      "Coupe premium": {
+        "description": "diagnostic, coiffure, soins cheveux et coiffage",
+        "temps": "40mins",
+        "prix": "30€"
+      }
+    },
+    {
+      "Coupe -18ans": {
+        "description": "coupe classique",
+        "temps": "30mins",
+        "prix": "18€"
+      }
+    },
+    {
+      "Coupe au ciseaux": {
+        "description": "diagnostic, coiffure uniquement au ciseaux et coiffage",
+        "temps": "40mins",
+        "prix": "27€"
+      }
+    },
+    {
+      "Design Couleur": {
+        "description": "",
+        "temps": "30mins",
+        "prix": "Sur devis"
+      }
+    }
+  ],
+  "BARBE": [
+    {
+      "Barbe classique": {
+        "description": "taillage, finition coupe-choux sous jet de vapeur, serviette",
+        "temps": "30mins",
+        "prix": "30€"
+      }
+    },
+    {
+      "Barbe PREMIUM": {
+        "description": "Taille, scultage, finition coupe-choux sous jet de vapeur, serviette",
+        "temps": "30mins",
+        "prix": "30€"
+      }
+    },
+    {
+      "Rasage Traditionnel": {
+        "description": "Rasage intégral à l'ancienne sous jet de vapeur et serviette chaud",
+        "temps": "40mins",
+        "prix": "35€"
+      }
+    },
+    {
+      "Coloration": {
+        "description": "",
+        "temps": "1h",
+        "prix": "Sur devis"
+      }
+    }
+  ],
+  "SOINS": [
+    {
+      "Soins visage classique": {
+        "description": "Nettoyage avec brosse et application du black mask",
+        "temps": "15mins",
+        "prix": "12€"
+      }
+    },
+    {
+      "Soin visage premium": {
+        "description": "Nettoyage avec brosse, gommage, hydratation du visage sous jet de vapeur",
+        "temps": "25mins",
+        "prix": "30€"
+      }
+    },
+    {
+      "Soins cheveux": {
+        "description": "Shampoing et soins adapté à vos cheveux",
+        "temps": "15mins",
+        "prix": "12€"
+      }
+    }
+  ]
+}
