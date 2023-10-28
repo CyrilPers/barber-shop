@@ -26,3 +26,20 @@ root {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
+
+
+h1,
+p {
+  margin: 5px;
+  padding: 0;
+  font-weight: 400;
+
+  font-size: 14px;
+  font-family: Inter, Helvetica, sans-serif;
+}
+
+h1 {
+  font-size: 22px;
+  font-weight: 600;
+  font-family: Inter, Helvetica, sans-serif;
+}

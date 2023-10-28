@@ -1,4 +1,6 @@
 const colors = {
+  lowBlack: "#4e5860",
+  black: "#202020",
   dark: "#17161a",
   incognito: "#333",
   white: "#fff",
