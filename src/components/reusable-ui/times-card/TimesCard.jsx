@@ -1,10 +1,13 @@
 import React from 'react'
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import { theme } from '../../../theme';
 
 export default function TimesCard({ day, hours }) {
+
+    const isClosed = hours === "Fermé"
+    console.log("isclosed", isClosed)
     return (
-        <TimesCardStyled>
+        <TimesCardStyled $isClosed={isClosed}>
             <p>{day}</p>
             <p className='hours'>{hours}</p>
         </TimesCardStyled>
@@ -23,9 +26,13 @@ justify-content: space-between;
     .hours {
         color: black;
     }
-    .isClosed {
-        .hours {
-        color: ${theme.colors.lowBlack};
-        }
+${({ $isClosed }) => $isClosed && isClosed}
+`
+
+const isClosed = css`
+    .hours {
+    color: ${theme.colors.lowBlack}; 
     }
 `;
+
+
