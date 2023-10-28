@@ -7,7 +7,19 @@ export default function Menu({ label, services }) {
     return (
         <MenuStyled>
             <p>{label}</p>
-            <Card services={services} />
+            {services.map(({ id, name, description, time, price }) => {
+                return (
+                    <div className="service-card">
+                        <Card
+                            key={id}
+                            name={name}
+                            description={description}
+                            time={time}
+                            price={price}
+                        />
+                    </div>
+                )
+            })}
 
         </MenuStyled>
     )
@@ -15,7 +27,6 @@ export default function Menu({ label, services }) {
 
 const MenuStyled = styled.div`
 margin-top:20px;
-padding-left: 10px;
     p {
         font-size: ${theme.fonts.size.P0};
         font-weight: ${theme.fonts.weights.medium};

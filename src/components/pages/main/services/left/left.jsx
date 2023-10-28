@@ -8,15 +8,22 @@ export default function Left() {
 
     return (
         <LeftStyled>
-            <Menu label="FORFAITS" services={menu.forfaits} />
-
+            {menu.map(({ id, category, services }) => {
+                return (
+                    <div className="service-card">
+                        <Menu
+                            key={id}
+                            label={category}
+                            services={services}
+                        />
+                    </div>
+                )
+            })}
         </LeftStyled>
+
     )
 }
 
 const LeftStyled = styled.section`
-background-color: white;
-box-shadow: ${theme.shadows.medium};
-border: 1px solid red;
 width: 60%;
 `;
