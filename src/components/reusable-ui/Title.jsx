@@ -38,7 +38,7 @@ const TitleStyled = styled.div`
 }
   p {
     margin: 0;
-    color: ${theme.colors.greyDark}
+    color: ${theme.colors.lowBlack};
   }
   .address {
     text-decoration: underline;

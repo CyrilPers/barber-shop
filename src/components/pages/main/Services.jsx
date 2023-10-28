@@ -4,13 +4,16 @@ import { theme } from '../../../theme';
 import Header from './services/Header.jsx';
 import Pictures from './services/Pictures';
 import Main from './services/main';
+import Title from './services/Title';
 
 export default function Book() {
-  console.log("page book")
+
+
   return (
     <BookStyled>
       <Header />
       <Pictures />
+      <Title />
       <Main />
     </BookStyled>
   )
