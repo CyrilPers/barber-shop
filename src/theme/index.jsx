@@ -75,6 +75,7 @@ const shadows = {
   orangeHighlight: "0 0 8px 0 rgb(255 154 35 / 100%)",
   leftColumn: "inset 0 0 20px rgba(0, 0, 0, 0.2)",
   cardBasket: "-4px 4px 15px 0 rgba(0 0 0 / 20%)",
+  veryStrongWhite: "0px 15px 30px 15px rgba(255, 255, 255, 0.2) inset",
 }
 
 const animation = {

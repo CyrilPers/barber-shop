@@ -31,8 +31,8 @@ const extraPrimaryStyle = css`
   font-size: 15px;
   font-weight: 800;
   color: white;
-  background-color: ${theme.colors.primary};
-  border: 1px solid ${theme.colors.primary};
+  background-color: ${theme.colors.black};
+  border: 1px solid ${theme.colors.lowBlack};
 
   &:hover {
     color: ${theme.colors.primary};

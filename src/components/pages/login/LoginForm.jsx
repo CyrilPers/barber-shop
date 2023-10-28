@@ -84,7 +84,6 @@ const LoginFormStyled = styled.form`
     color: ${theme.colors.white};
     font-weight: ${theme.fonts.weights.light}
 
-
   }  
 
   .input-login {

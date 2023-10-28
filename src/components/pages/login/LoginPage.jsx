@@ -2,6 +2,7 @@ import React from 'react'
 import LoginForm from './LoginForm.jsx'
 import { styled } from 'styled-components'
 import Logo from '../../reusable-ui/Logo.jsx'
+import { theme } from '../../../theme/index.jsx'
 
 
 export default function LoginPage() {
@@ -22,11 +23,14 @@ const LoginPageStyled = styled.div`
     justify-content: center;
     align-items: center;
     background: 
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
         url('/images/background.jpg') fixed center/cover;
     
     .logo-login-page {
       transform: scale(3);
+      h1 {
+        text-shadow: 1px 0 20px #ffffff; /* Effet d'ombre */
+      }
     }
 
     @media(max-width: 767px) {

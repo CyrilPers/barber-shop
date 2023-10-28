@@ -20,7 +20,7 @@ const LogoStyled = styled.div`
 
     h1{
     display: inline;
-    color: ${theme.colors.primary};
+    color: ${theme.colors.black};
     font-style: normal;
     line-height: 1em;
     font-size: ${theme.fonts.size.P2};
