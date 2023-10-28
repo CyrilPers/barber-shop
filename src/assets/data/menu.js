@@ -6,14 +6,14 @@ export const menu = [
       {
         id: 1,
         name: "Forfait Coupe + barbe",
-        description: "coupe classique, barbe classique",
-        time: "45mins",
+        description: "Coupe classique, barbe classique",
+        time: "45min",
         price: "28€"
       },
       {
         id: 2,
         name: "Forfait PREMIUM",
-        description: "coupe premium, barbe Premium, soin visage premium",
+        description: "Coupe premium, barbe Premium, soin visage premium",
         time: "1h35",
         price: "80€"
       }
@@ -26,36 +26,36 @@ export const menu = [
       {
         id: 3,
         name: "coupe classique",
-        description: "diagnostic, coiffure et coiffage",
-        time: "30mins",
+        description: "Diagnostic, coiffure et coiffage",
+        time: "30min",
         price: "20€"
       },
       {
         id: 4,
         name: "Coupe premium",
-        description: "diagnostic, coiffure, soins cheveux et coiffage",
-        time: "40mins",
+        description: "Diagnostic, coiffure, soins cheveux et coiffage",
+        time: "40min",
         price: "30€"
       },
       {
         id: 5,
         name: "Coupe -18ans",
-        description: "coupe classique",
-        time: "30mins",
+        description: "Coupe classique",
+        time: "30min",
         price: "18€"
       },
       {
         id: 6,
         name: "Coupe au ciseaux",
-        description: "diagnostic, coiffure uniquement au ciseaux et coiffage",
-        time: "40mins",
+        description: "Diagnostic, coiffure uniquement au ciseaux et coiffage",
+        time: "40min",
         price: "27€"
       },
       {
         id: 7,
         name: "Design Couleur",
         description: "",
-        time: "30mins",
+        time: "30min",
         price: "Sur devis"
       }
     ]
@@ -67,22 +67,22 @@ export const menu = [
       {
         id: 8,
         name: "Barbe classique",
-        description: "taillage, finition coupe-choux sous jet de vapeur, serviette",
-        time: "30mins",
+        description: "Taillage, finition coupe-choux sous jet de vapeur, serviette",
+        time: "30min",
         price: "30€"
       },
       {
         id: 9,
         name: "Barbe PREMIUM",
         description: "Taille, scultage, finition coupe-choux sous jet de vapeur, serviette",
-        time: "30mins",
+        time: "30min",
         price: "30€"
       },
       {
         id: 10,
         name: "Rasage Traditionnel",
         description: "Rasage intégral à l'ancienne sous jet de vapeur et serviette chaud",
-        time: "40mins",
+        time: "40min",
         price: "35€"
       },
       {
@@ -102,21 +102,21 @@ export const menu = [
         id: 12,
         name: "Soins visage classique",
         description: "Nettoyage avec brosse et application du black mask",
-        time: "15mins",
+        time: "15min",
         price: "12€"
       },
       {
         id: 13,
         name: "Soin visage premium",
         description: "Nettoyage avec brosse, gommage, hydratation du visage sous jet de vapeur",
-        time: "25mins",
+        time: "25min",
         price: "30€"
       },
       {
         id: 14,
         name: "Soins cheveux",
         description: "Shampoing et soins adapté à vos cheveux",
-        time: "15mins",
+        time: "15min",
         price: "12€"
       }
     ]
