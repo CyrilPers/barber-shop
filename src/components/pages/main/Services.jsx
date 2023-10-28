@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { theme } from '../../../theme';
 import Header from './services/Header.jsx';
 import Pictures from './services/Pictures';
+import Main from './services/main';
 
 export default function Book() {
   console.log("page book")
@@ -10,6 +11,7 @@ export default function Book() {
     <BookStyled>
       <Header />
       <Pictures />
+      <Main />
     </BookStyled>
   )
 }
