@@ -13,8 +13,6 @@ export default function ReviewsBottoms() {
 
 const ReviewsBottomsStyled = styled.div`
   width: 100%;
-  background-color: white;
-  border-radius: 0 0 ${theme.borderRadius.midRound} ${theme.borderRadius.midRound};
   box-sizing: border-box;
   padding: 15px;
 
