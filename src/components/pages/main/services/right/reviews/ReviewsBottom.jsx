@@ -2,11 +2,13 @@ import React from 'react'
 import styled from 'styled-components';
 import { theme } from '../../../../../../theme/index.jsx'
 import Global from './global/Global.jsx';
+import ReviewsList from './reviews/ReviewsList.jsx';
 
 export default function ReviewsBottoms() {
     return (
         <ReviewsBottomsStyled>
-            <Global />
+            {/* <Global /> */}
+            <ReviewsList />
         </ReviewsBottomsStyled>
     )
 }
