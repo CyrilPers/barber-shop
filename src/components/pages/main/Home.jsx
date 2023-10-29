@@ -4,6 +4,7 @@ import { Route, Routes } from 'react-router-dom';
 import Services from './Services.jsx';
 import { theme } from '../../../theme/index.jsx';
 import Navbar from '../../header/Navbar.jsx';
+import Footer from './Footer.jsx';
 
 
 export default function Main() {
@@ -15,6 +16,7 @@ export default function Main() {
         <Route path="/avis/:username" />
         <Route path="/a-propos/:username" />
       </Routes>
+      <Footer />
     </MainStyled>
   )
 }
