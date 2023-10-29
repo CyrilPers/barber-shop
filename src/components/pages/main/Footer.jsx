@@ -32,6 +32,7 @@ height: 100px;
         flex-direction: row;
         justify-content: flex-start;
         .copy {
+            margin-top: 10px;
             color: ${theme.colors.lowBlack};
             font-size: ${theme.fonts.size.SM};
         }
