@@ -14,7 +14,7 @@ export default function Navbar() {
 }
 
 const NavbarStyled = styled.nav`
-  padding: 10px 20%;
+  padding: 10px 15%;
   box-sizing: border-box;
   width: 100%;
   display: flex;
