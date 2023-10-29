@@ -1,24 +1,18 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components';
-import { menu } from '../../../../../assets/data/menu';
-import Menu from '../../../../reusable-ui/Menu';
-import { theme } from '../../../../../theme';
+import Place from './Place.jsx'
+import Map from './Map';
+import ServicesMapping from './ServicesMapping';
+import About from './About.jsx';
 
 export default function Left() {
 
     return (
         <LeftStyled>
-            {menu.map(({ id, category, services }) => {
-                return (
-                    <div className="service-card">
-                        <Menu
-                            key={id}
-                            label={category}
-                            services={services}
-                        />
-                    </div>
-                )
-            })}
+            <ServicesMapping />
+            <Place />
+            <Map />
+            <About />
         </LeftStyled>
 
     )

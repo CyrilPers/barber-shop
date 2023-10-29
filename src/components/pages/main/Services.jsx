@@ -5,7 +5,6 @@ import Header from './services/Header.jsx';
 import Pictures from './services/Pictures.jsx';
 import Main from './services/Main.jsx';
 import Title from './services/Title';
-import Place from './services/Place';
 
 export default function Book() {
 
@@ -15,7 +14,6 @@ export default function Book() {
       <Pictures />
       <Title />
       <Main />
-      <Place />
     </BookStyled>
   )
 }
