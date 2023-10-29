@@ -23,7 +23,7 @@ const BookStyled = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-  padding: 30px 20%;
+  padding: 30px 15%;
   width: 100%;
   background-color: ${theme.colors.background_white};
   .rdv {
