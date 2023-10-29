@@ -20,12 +20,12 @@ display: flex;
 justify-content: space-between;
     .switcher {
         cursor: pointer;
-        .switcher-icon{
+    }
+    .switcher-icon{
         position: relative;
         bottom: -3px;
-        color: ${theme.colors.lowBlack};
+        opacity: 0.8;
         }
-    }
 
     span {
         font-size: ${theme.fonts.size.SM};
