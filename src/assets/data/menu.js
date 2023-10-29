@@ -25,14 +25,14 @@ export const menu = [
     services: [
       {
         id: 3,
-        name: "coupe classique",
+        name: "Coupe Classique",
         description: "Diagnostic, coiffure et coiffage",
         time: "30min",
         price: "20€"
       },
       {
         id: 4,
-        name: "Coupe premium",
+        name: "Coupe PREMIUM",
         description: "Diagnostic, coiffure, soins cheveux et coiffage",
         time: "40min",
         price: "30€"
@@ -46,7 +46,7 @@ export const menu = [
       },
       {
         id: 6,
-        name: "Coupe au ciseaux",
+        name: "Coupe aux Ciseaux",
         description: "Diagnostic, coiffure uniquement au ciseaux et coiffage",
         time: "40min",
         price: "27€"
@@ -66,7 +66,7 @@ export const menu = [
     services: [
       {
         id: 8,
-        name: "Barbe classique",
+        name: "Barbe Classique",
         description: "Taillage, finition coupe-choux sous jet de vapeur, serviette",
         time: "30min",
         price: "30€"
@@ -100,21 +100,21 @@ export const menu = [
     services: [
       {
         id: 12,
-        name: "Soins visage classique",
+        name: "Soins Visage Classique",
         description: "Nettoyage avec brosse et application du black mask",
         time: "15min",
         price: "12€"
       },
       {
         id: 13,
-        name: "Soin visage premium",
+        name: "Soin Visage Premium",
         description: "Nettoyage avec brosse, gommage, hydratation du visage sous jet de vapeur",
         time: "25min",
         price: "30€"
       },
       {
         id: 14,
-        name: "Soins cheveux",
+        name: "Soins Cheveux",
         description: "Shampoing et soins adapté à vos cheveux",
         time: "15min",
         price: "12€"
