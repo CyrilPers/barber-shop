@@ -16,5 +16,5 @@ export default function Main() {
 
 const MainStyled = styled.div`
   display: flex;
-  margin-bottom: 50px;
+  margin-bottom: 20px;
 `;
