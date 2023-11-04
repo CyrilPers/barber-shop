@@ -71,9 +71,11 @@ const LoginFormStyled = styled.form`
     border: 1.5px solid ${theme.colors.greyLight};
     margin-bottom: 40px;
 
+
   }
 
   h1{
+    letter-spacing: 2px;
     margin-top: 50px;
     margin-bottom: 20px;
     font-size: ${theme.fonts.size.P3};
