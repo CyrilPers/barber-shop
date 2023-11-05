@@ -4,11 +4,14 @@ import Title from '../../../reusable-ui/Title.jsx'
 import Button from '../../../reusable-ui/Button.jsx'
 
 export default function Header() {
+
     return (
         <HeaderStyled>
             <Title />
-            <Button className="rdv" label="Prendre RDV" />
-        </HeaderStyled>
+            <a href="#booking">
+                <Button href="www.google.fr" className="rdv" label="Prendre RDV" />
+            </a>
+        </HeaderStyled >
     )
 }
 

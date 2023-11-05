@@ -6,7 +6,7 @@ import index from '../../../../index.css'
 export default function Title() {
     return (
         <TitleStyled>
-            <h1>Réserver en ligne pour un RDV chez MONTPEL BARBER</h1>
+            <h1 id="booking">Réserver en ligne pour un RDV chez MONTPEL BARBER</h1>
             <p>24h24 - Confirmation immédiate</p>
             <h1>Choix de la prestation</h1>
         </TitleStyled>
