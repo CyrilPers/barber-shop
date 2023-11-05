@@ -8,7 +8,6 @@ export default function ReviewSwitcher({ setMin, min, setMax, max, reviews }) {
     const stopNext = max > reviews.length
     const stopPrevious = min === 0
 
-    console.log('reviewsL', reviews.length);
     const handlenext = () => {
         if (!stopNext) {
             setMin(min + 5)

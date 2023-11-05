@@ -5,7 +5,7 @@ import { theme } from '../../../theme';
 export default function TimesCard({ day, hours }) {
 
     const isClosed = hours === "Fermé"
-    console.log("isclosed", isClosed)
+
     return (
         <TimesCardStyled $isClosed={isClosed}>
             <p>{day}</p>

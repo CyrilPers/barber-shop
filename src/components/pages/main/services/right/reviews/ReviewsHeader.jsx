@@ -6,8 +6,6 @@ export default function ReviewsHeader({ setIsSelected, isSelected }) {
 
     const handleClick = (tab) => {
         setIsSelected(tab)
-        console.log('tab', tab)
-        console.log('isSelected', isSelected)
     }
 
     return (
