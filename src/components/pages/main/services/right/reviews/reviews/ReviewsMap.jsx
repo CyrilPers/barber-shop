@@ -2,6 +2,7 @@ import React from 'react'
 import ReviewCard from './ReviewCard.jsx/ReviewCard';
 import styled from 'styled-components';
 import { theme } from '../../../../../../../theme';
+import { convertDate } from '../../../../../../../utils/convert';
 
 
 export default function ReviewsMap({ min, max, reviews }) {
@@ -15,7 +16,7 @@ export default function ReviewsMap({ min, max, reviews }) {
                             key={id}
                             description={description}
                             rating={rating}
-                            date={date}
+                            date={convertDate(date)}
                         />
                         <div className='border-parent'>
                             <div className='border' />
