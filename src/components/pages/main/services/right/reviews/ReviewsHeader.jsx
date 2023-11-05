@@ -2,14 +2,21 @@ import React from 'react'
 import styled from 'styled-components';
 import { theme } from '../../../../../../theme';
 
-export default function ReviewsHeader() {
+export default function ReviewsHeader({ setIsSelected, isSelected }) {
+
+    const handleClick = (tab) => {
+        setIsSelected(tab)
+        console.log('tab', tab)
+        console.log('isSelected', isSelected)
+    }
+
     return (
-        <ReviewsHeaderStyled>
+        <ReviewsHeaderStyled >
             <div className="choose">
-                <div className='note'>Note globale</div>
-                <div className='avis'>Avis</div>
+                <div className={`global ${isSelected === "global" && "isSelected"}`} id='global' onClick={() => handleClick("global")}>Note globale</div>
+                <div className={`reviews ${isSelected === "reviews" && "isSelected"}`} id='reviews' onClick={() => handleClick("reviews")}>Avis</div>
             </div>
-        </ReviewsHeaderStyled>
+        </ReviewsHeaderStyled >
     )
 }
 
@@ -19,7 +26,7 @@ width: 100%;
     display: flex;
     height: 50px;
 }
-.note, .avis {
+.global, .reviews {
     font-size: ${theme.fonts.size.SM};
     cursor: pointer;
     display: flex;
