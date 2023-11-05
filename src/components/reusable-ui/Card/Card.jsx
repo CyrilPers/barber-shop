@@ -3,12 +3,13 @@ import styled from 'styled-components';
 import { theme } from '../../../theme';
 import Right from './Right.jsx';
 import Left from './Left.jsx';
+import { convertTime } from '../../../utils/time.jsx';
 
 export default function Card({ id, name, description, time, price }) {
     return (
         <CardStyled>
             <Left id={id} name={name} description={description} />
-            <Right time={time} price={price} />
+            <Right time={convertTime(time)} price={price} />
         </CardStyled>
     )
 }
