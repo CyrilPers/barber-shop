@@ -1,14 +1,14 @@
 import React from 'react'
-import { reviews } from '../../../../../../../assets/data/reviews'
 import ReviewCard from './ReviewCard.jsx/ReviewCard';
 import styled from 'styled-components';
 import { theme } from '../../../../../../../theme';
 
 
-export default function ReviewsMap() {
+export default function ReviewsMap({ min, max, reviews }) {
+
     return (
         <ReviewsMapStyled>
-            {reviews.slice(0, 5).map(({ id, description, rating, date }) => {
+            {reviews.slice(min, max).map(({ id, description, rating, date }) => {
                 return (
                     <div className="review-card">
                         <ReviewCard
