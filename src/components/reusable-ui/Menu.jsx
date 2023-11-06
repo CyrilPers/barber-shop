@@ -10,7 +10,9 @@ export default function Menu({ label, services }) {
             <div className='list'>
                 {services.map(({ id, name, description, time, price }) => {
                     return (
-                        <div className="service-card">
+                        <div className="service-card"
+                            key={id}
+                        >
                             <Card
                                 key={id}
                                 name={name}

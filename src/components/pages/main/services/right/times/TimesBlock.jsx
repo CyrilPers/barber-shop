@@ -9,7 +9,7 @@ export default function TimesBlock() {
         <TimesBlockStyled>
             {times.map(({ id, day, hours }) => {
                 return (
-                    <div className="">
+                    <div key={id} >
                         <TimesCard
                             key={id}
                             day={day}

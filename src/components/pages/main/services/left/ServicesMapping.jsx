@@ -7,7 +7,8 @@ export default function ServicesMapping() {
         <>
             {menu.map(({ id, category, services }) => {
                 return (
-                    <div className="service-card">
+                    <div className="service-card"
+                        key={id}>
                         <Menu
                             key={id}
                             label={category}
