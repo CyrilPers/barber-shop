@@ -55,7 +55,7 @@ const fonts = {
   },
   family: {
     stylish: `"Amatic SC", cursive`,
-    title: `"BagelFatOne-Regular", cursive`,
+    title: `'Alfa Slab One', serif`,
     inter: `"Inter-VariableFont", cursive`,
   }
 }
