@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components';
 import { theme } from '../../../../theme';
-import index from '../../../../index.css'
+import index from "../../../../index.css?inline"
 
 export default function Title() {
     return (

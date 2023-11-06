@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
-import styled from "styled-components";
-import { IoChevronForward } from "react-icons/io5";
+import React, { useState } from 'react'
+import { useNavigate } from 'react-router-dom'
+import styled from "styled-components"
+import { IoChevronForward } from "react-icons/io5"
 import { BsPersonCircle } from "react-icons/bs"
 import TextInput from '../../reusable-ui/TextInput.jsx'
-import Button from '../../reusable-ui/Button.jsx';
-import index from '../../../index.css'
+import Button from '../../reusable-ui/Button.jsx'
+import index from "../../../index.css?inline"
 import { theme } from '../../../theme/index.jsx'
-import { fadeInFromBottomLog } from '../../../theme/animations';
+import { fadeInFromBottomLog } from '../../../theme/animations'
 
 
 

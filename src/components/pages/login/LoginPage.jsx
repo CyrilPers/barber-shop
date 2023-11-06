@@ -2,9 +2,8 @@ import React from 'react'
 import LoginForm from './LoginForm.jsx'
 import { styled } from 'styled-components'
 import Logo from '../../reusable-ui/Logo.jsx'
-import index from '../../../index.css'
+import index from '../../../index.css?inline'
 import { theme } from '../../../theme/index.jsx'
-
 
 export default function LoginPage() {
 
