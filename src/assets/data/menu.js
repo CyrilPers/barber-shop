@@ -5,7 +5,7 @@ export const menu = [
     services: [
       {
         id: 1,
-        name: "Forfait Coupe + barbe",
+        name: "Forfait Coupe + Barbe",
         description: "Coupe classique, barbe classique",
         time: 45, // Durée en minutes
         price: "28€"
