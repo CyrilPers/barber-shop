@@ -29,7 +29,7 @@ const LoginPageStyled = styled.div`
     .logo-login-page {
       transform: scale(3);
       h1 {
-        text-shadow: 1px 0px 10px #ffffff; /* Effet d'ombre */
+        text-shadow: 1px 0px 5px #ffffff7f; /* Effet d'ombre */
 
       }
     }
