@@ -13,7 +13,7 @@ export default function Title() {
     <TitleStyled>
       <h1>MONTPL BARBER</h1>
       <Address />
-      <p className='note'><AiOutlineStar size="20px" className='icon' />4.9 (45 avis)</p>
+      <a href="#reviews" className='note'><AiOutlineStar size="20px" className='icon' />4.9 (45 avis)</a>
     </TitleStyled>
   )
 }
@@ -33,9 +33,10 @@ const TitleStyled = styled.div`
     margin: 0;
 
 }
-  p {
+  a {
     margin: 0;
     color: ${theme.colors.lowBlack};
+    text-decoration: none;
   }
   .address {
     text-decoration: underline;

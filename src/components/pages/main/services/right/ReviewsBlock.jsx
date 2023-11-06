@@ -9,7 +9,7 @@ export default function ReviewsBlock() {
     const [isSelected, setIsSelected] = useState("global");
 
     return (
-        <ReviewsBlockStyled>
+        <ReviewsBlockStyled id="reviews">
             <ReviewsHeader isSelected={isSelected} setIsSelected={setIsSelected} />
             <ReviewsBottoms isSelected={isSelected} setIsSelected={setIsSelected} />
         </ReviewsBlockStyled>
