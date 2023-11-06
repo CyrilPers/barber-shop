@@ -9,7 +9,7 @@ export default function Header() {
         <HeaderStyled>
             <Title />
             <a href="#booking">
-                <Button href="www.google.fr" className="rdv" label="Prendre RDV" />
+                <Button className="rdv" label="Prendre RDV" />
             </a>
         </HeaderStyled >
     )
