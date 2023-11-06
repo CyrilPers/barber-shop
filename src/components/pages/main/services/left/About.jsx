@@ -6,7 +6,7 @@ export default function About() {
     return (
         <AboutStyled>
             <h2>À-propos</h2>
-            <div class="description">
+            <div className="description">
                 <p>Situé dans le centre de Montpellier, MONTPL BARBER est un salon de coiffure-barbier-visagiste pour hommes.</p>
                 <p>Notre barber shop est un véritable havre de paix où vous pourrez vous détendre prendre soin de vous.</p>
                 <p>Découvrez notre savoir-faire et notre passion pour le barbering. </p>
