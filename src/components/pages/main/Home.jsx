@@ -1,23 +1,31 @@
 import React from 'react'
 import styled from 'styled-components';
-import { Route, Routes } from 'react-router-dom';
 import Services from './Services.jsx';
-import { theme } from '../../../theme/index.jsx';
 import Navbar from '../../header/Navbar.jsx';
 import Footer from './Footer.jsx';
+import Booking from '../booking/Booking.jsx';
+import { useServices } from '../../../hooks/useServices.jsx';
+import BookingContext from '../../../context/BookingContext.jsx';
 
 
 export default function Main() {
+
+  const { selectedService, setSelectedService } = useServices()
+
+  const BookingContextValue = {
+    selectedService,
+    setSelectedService,
+  }
+
   return (
-    <MainStyled>
-      <Navbar />
-      <Routes>
-        <Route path="*" element={<Services />} />
-        <Route path="/avis/:username" />
-        <Route path="/a-propos/:username" />
-      </Routes>
-      <Footer />
-    </MainStyled>
+    <BookingContext.Provider value={BookingContextValue}>
+      <MainStyled>
+        <Navbar />
+        {!selectedService && <Services setSelectedService={setSelectedService} />}
+        {selectedService && <Booking />}
+        <Footer />
+      </MainStyled>
+    </BookingContext.Provider>
   )
 }
 
@@ -26,6 +34,5 @@ width: 100%;
 min-height: 100vh;
 display: flex;
 flex-direction: column;
-justify-content: center;
 align-items: center;
 `;

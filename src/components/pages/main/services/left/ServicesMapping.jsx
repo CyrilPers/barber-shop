@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Menu from '../../../../reusable-ui/Menu'
 import { menu } from '../../../../../assets/data/menu'
 
-export default function ServicesMapping() {
+export default function ServicesMapping({ setSelectedService }) {
+
+
+    const handleSelectService = (service) => {
+        setSelectedService(service)
+    }
+
     return (
         <>
             {menu.map(({ id, category, services }) => {
@@ -10,7 +16,7 @@ export default function ServicesMapping() {
                     <div className="service-card"
                         key={id}>
                         <Menu
-                            key={id}
+                            handleSelectService={handleSelectService}
                             label={category}
                             services={services}
                         />

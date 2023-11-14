@@ -1,15 +1,18 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import styled from 'styled-components';
 import Place from './Place.jsx'
-import Map from './Map';
-import ServicesMapping from './ServicesMapping';
+import Map from './Map.jsx';
+import ServicesMapping from './ServicesMapping.jsx';
 import About from './About.jsx';
+import BookingContext from '../../../../../context/BookingContext.jsx';
 
 export default function Left() {
 
+    const { setSelectedService } = useContext(BookingContext)
+
     return (
         <LeftStyled>
-            <ServicesMapping />
+            <ServicesMapping setSelectedService={setSelectedService} />
             <Place />
             <Map />
             <About />

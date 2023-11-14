@@ -6,20 +6,20 @@ import Pictures from './services/Pictures.jsx';
 import Main from './services/Main.jsx';
 import Title from './services/Title';
 
-export default function Book() {
+export default function Services() {
 
   return (
-    <BookStyled>
+    <ServicesStyled>
       <Header />
       <Pictures />
       <Title />
       <Main />
-    </BookStyled>
+    </ServicesStyled>
   )
 }
 
 
-const BookStyled = styled.div`
+const ServicesStyled = styled.div`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
