@@ -3,22 +3,19 @@ import styled from 'styled-components';
 import { theme } from '../../theme/index.jsx'
 import Card from './card/Card.jsx';
 
-export default function Menu({ label, services }) {
+export default function Menu({ label, services, handleSelectService }) {
     return (
         <MenuStyled>
             <p className='category-title'>{label}</p>
             <div className='list'>
-                {services.map(({ id, name, description, time, price }) => {
+                {services.map((service) => {
                     return (
                         <div className="service-card"
-                            key={id}
+                            key={service.id}
                         >
                             <Card
-                                key={id}
-                                name={name}
-                                description={description}
-                                time={time}
-                                price={price}
+                                handleSelectService={handleSelectService}
+                                service={service}
                             />
                             <div className='border-parent'>
                                 <div className='border' />
