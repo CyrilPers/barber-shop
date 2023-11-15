@@ -6,15 +6,20 @@ import Footer from './Footer.jsx';
 import Booking from '../booking/Booking.jsx';
 import { useServices } from '../../../hooks/useServices.jsx';
 import BookingContext from '../../../context/BookingContext.jsx';
+import { useBarbers } from '../../../hooks/useBarbers.jsx';
 
 
 export default function Main() {
 
   const { selectedService, setSelectedService } = useServices()
+  const { selectedBarber, setSelectedBarber } = useBarbers()
+
 
   const BookingContextValue = {
     selectedService,
     setSelectedService,
+    selectedBarber,
+    setSelectedBarber
   }
 
   return (
