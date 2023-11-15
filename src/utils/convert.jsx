@@ -15,3 +15,8 @@ export const convertDate = (date) => {
     let day = dateObj.getDate().toString().length === 1 ? dateObj.getDate().toString().padStart(2, '0') : dateObj.getDate();
     return day + "/" + month + "/" + year
 }
+
+export const getFirstLetter = (string) => {
+    const firstLetter = string.charAt(0);
+    return firstLetter
+}
