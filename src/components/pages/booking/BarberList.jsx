@@ -6,8 +6,6 @@ import { checkIfIsClicked } from '../../../utils/helpers.jsx'
 
 export default function BarberList({ handleClick, selectedBarber }) {
 
-    console.log('selectedBarber', selectedBarber);
-
     return (
         <BarberListStyled>
             {barbers.map((barber) => {

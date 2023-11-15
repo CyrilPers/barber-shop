@@ -5,7 +5,6 @@ import { theme } from '../../../theme';
 import { getFirstLetter } from '../../../utils/convert';
 
 export default function BarberCard({ name, isSelected, onClick }) {
-    console.log('isSelected', isSelected)
 
     return (
         <BarberCardStyled BarberCardStyled $isSelected={isSelected} onClick={onClick} >

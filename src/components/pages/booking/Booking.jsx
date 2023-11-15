@@ -10,8 +10,6 @@ export default function Booking() {
 
     const { selectedService, setSelectedService, selectedBarber, setSelectedBarber } = useContext(BookingContext)
 
-    console.log('selectedBarber', selectedBarber);
-
     return (
         <BookingStyled>
             <Title />
