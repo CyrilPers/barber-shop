@@ -1,3 +1,7 @@
+export const deepClone = (array) => {
+    return JSON.parse(JSON.stringify(array))
+}
+
 export const checkIfIsClicked = (selected, clicked) => {
     return selected === clicked
 }
@@ -14,13 +18,14 @@ export const getWeek = (calendar, weeks = 0) => {
     const oneWeek = 7 * oneDay
     const fromDate = currentDate + weeks * oneWeek + oneDay
     const toDate = fromDate + oneWeek
-    console.log('fromDate', fromDate);
-    console.log('toDate', toDate);
-
 
     const filteredCalendar = calendar.filter(
         (event) => event.date >= fromDate && event.date < toDate
     )
 
     return filteredCalendar
+}
+
+export const capitalizeFirstLetter = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
 }
