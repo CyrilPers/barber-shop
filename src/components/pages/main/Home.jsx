@@ -7,19 +7,26 @@ import Booking from '../booking/Booking.jsx';
 import { useServices } from '../../../hooks/useServices.jsx';
 import BookingContext from '../../../context/BookingContext.jsx';
 import { useBarbers } from '../../../hooks/useBarbers.jsx';
+import { useBooked } from '../../../hooks/useBooked.jsx';
+import { useCalendar } from '../../../hooks/useCalendar.jsx';
 
 
 export default function Main() {
 
   const { selectedService, setSelectedService } = useServices()
   const { selectedBarber, setSelectedBarber } = useBarbers()
-
+  const { bookedServices, setBookedServices } = useBooked()
+  const { calendar, setCalendar } = useCalendar()
 
   const BookingContextValue = {
     selectedService,
     setSelectedService,
     selectedBarber,
-    setSelectedBarber
+    setSelectedBarber,
+    bookedServices,
+    setBookedServices,
+    calendar,
+    setCalendar
   }
 
   return (

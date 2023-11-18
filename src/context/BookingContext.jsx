@@ -5,4 +5,8 @@ export default createContext({
     setSelectedService: () => { },
     selectedBarber: {},
     setSelectedBarber: () => { },
+    bookedServices: {},
+    setBookedServices: () => { },
+    calendar: {},
+    setCalendar: () => { },
 });
