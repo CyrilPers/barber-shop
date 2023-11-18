@@ -15,7 +15,7 @@ export default function Profil() {
 
   return (
     <ProfilStyled>
-      <Button className="disconnect" label="Se déconnecter" onClick={handleClick} />
+      <Button className="disconnect btn default" label="Se déconnecter" onClick={handleClick} />
     </ProfilStyled>
   )
 }
@@ -27,6 +27,5 @@ align-items: center;
   width: 130px;
   height: 30px;
   font-size: ${theme.fonts.size.XXS};
-  background-color: #000;
 }
 `;

@@ -30,6 +30,5 @@ const ServicesStyled = styled.div`
   width: 130px;
   height: 30px;
   font-size: ${theme.fonts.size.XXS};
-  background-color: #000;
   }
 `;

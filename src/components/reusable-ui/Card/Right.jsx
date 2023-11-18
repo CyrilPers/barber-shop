@@ -11,7 +11,7 @@ export default function Right({ service, handleSelectService }) {
             <div className='time'>{convertTime(service.time)}</div>
             <div className='time'><PiDotOutlineFill /></div>
             <div className='price'>{service.price}</div>
-            <Button label="Choisir" className="btn" onClick={() => handleSelectService(service)} />
+            <Button label="Choisir" className="btn default" onClick={() => handleSelectService(service)} />
         </RightStyled>
     )
 }
@@ -28,7 +28,6 @@ align-items: center;
 }
 .btn {
     font-size: ${theme.fonts.size.XS};
-    background-color: black;
     width: 80px;
     height: 15px;
     margin-left: 10px;
