@@ -1,22 +1,21 @@
 import React from 'react'
 import styled from 'styled-components';
-import { convertDate } from '../../../../utils/convert';
-import Button from '../../../reusable-ui/Button';
 import CalendarDate from './CalendarDate';
+import TimeCard from './TimeCard';
 
-export default function CalendarCard({ date, events }) {
-    const showDate = convertDate(date, "calendar")
-    console.log('showDate', showDate);
+export default function CalendarCard({ date, events, page, handleClick }) {
 
     return (
         <CalendarCardStyled>
-            <CalendarDate date={showDate} />
+            <CalendarDate date={date} />
             {events.map(({ id, time }) => {
                 return (
-                    <div className="">
-                        <Button
+                    <div className="book-btn">
+                        <TimeCard
+                            page={page}
                             key={id}
-                            label={time}
+                            time={time}
+                            onClick={() => { handleClick(date, time) }}
                         />
 
                     </div>
@@ -27,7 +26,7 @@ export default function CalendarCard({ date, events }) {
 }
 
 const CalendarCardStyled = styled.div`
+width: 100%;
 display: flex;
 flex-direction: column;
-  
 `;

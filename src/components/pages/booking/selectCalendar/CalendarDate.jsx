@@ -1,12 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
 import { theme } from '../../../../theme/index.jsx';
+import { capitalizeFirstLetter } from '../../../../utils/helpers.jsx';
+import { convertDate } from '../../../../utils/convert.jsx';
 
 export default function CalendarDate({ date }) {
 
-    const month = date[0].charAt(0).toUpperCase() + date[0].slice(1);
-    const day = date[1].charAt(0).toUpperCase() + date[1].slice(1);
-    const dayNum = date[2]
+    const calendarDate = convertDate(date, "calendar")
+    const month = capitalizeFirstLetter(calendarDate[0])
+    const day = capitalizeFirstLetter(calendarDate[1])
+    const dayNum = calendarDate[2]
 
     return (
         <CalendarDateStyled>
@@ -21,6 +24,7 @@ display: flex;
 flex-direction: column;
 padding: 0 10px;
 align-items: center;
+margin-bottom: 10px;
 .dayAndMonth {
     display: flex;
     justify-content: center;

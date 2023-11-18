@@ -18,7 +18,6 @@ const ButtonStyled = styled.button`
 const extraPrimaryStyle = css`
   cursor: pointer;
   width: 100%;
-  border: 1px solid red;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -58,6 +57,7 @@ const extraPrimaryStyle = css`
     align-items: center;
   }
  `
+
 const extraStyle = {
   default: extraPrimaryStyle,
 }
