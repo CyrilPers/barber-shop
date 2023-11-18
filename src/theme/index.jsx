@@ -13,6 +13,7 @@ const colors = {
   red: "#E76F51",
   redSecondary: "#c4151c",
   blue: "#51a7e1",
+  greyVeryLight: "#f5f5f8",
   greyLight: "#e4e5e9",
   greyMedium: "#a7a8ad",
   greySemiDark: "#93a2b1",
