@@ -1,8 +1,8 @@
 import React, { useContext } from 'react'
 import styled from 'styled-components';
-import { barbers } from '../../../assets/data/barbers'
-import BarberCard from '../../reusable-ui/barberCard/BarberCard';
-import { checkIfIsClicked } from '../../../utils/helpers.jsx'
+import { barbers } from '../../../../assets/data/barbers.js'
+import BarberCard from '../../../reusable-ui/barberCard/BarberCard.jsx';
+import { checkIfIsClicked } from '../../../../utils/helpers.jsx'
 
 export default function BarberList({ handleClick, selectedBarber }) {
 

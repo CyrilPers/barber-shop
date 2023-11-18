@@ -1,14 +1,11 @@
 import React from 'react'
-import BarberList from '../BarberList';
+import BarberList from './BarberList.jsx';
 import SelectedService from './SelectedService';
 import styled from 'styled-components';
 import { theme } from '../../../../theme';
 
-export default function ChooseBarber({ selectedBarber, setSelectedBarber, setSelectedService, selectedService }) {
+export default function ChooseBarber({ selectedBarber, setSelectedBarber, setSelectedService, selectedService, setCalendar, handleClick }) {
 
-    const handleClick = (barber) => {
-        setSelectedBarber(barber)
-    }
 
     return (
         <ChooseBarberStyled>
