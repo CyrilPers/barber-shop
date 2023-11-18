@@ -4,7 +4,7 @@ import SelectedService from './SelectedService';
 import styled from 'styled-components';
 import { theme } from '../../../../theme';
 
-export default function ChooseBarber({ selectedBarber, setSelectedBarber, setSelectedService, selectedService, setCalendar, handleClick }) {
+export default function ChooseBarber({ selectedBarber, setSelectedService, selectedService, handleClick }) {
 
 
     return (

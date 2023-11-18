@@ -6,7 +6,6 @@ import BookingContext from '../../../context/BookingContext.jsx'
 import ChooseBarber from './selectBarber/ChooseBarber.jsx';
 import Step from '../../reusable-ui/booking/Step.jsx';
 import ChooseDateTime from './selectCalendar/ChooseDateTime.jsx';
-import { getWeek } from '../../../utils/helpers.jsx';
 
 export default function Booking() {
 
@@ -16,8 +15,6 @@ export default function Booking() {
         setSelectedBarber(barber)
         setCalendar(barber.calendar)
     }
-
-    console.log('barbercal', calendar);
 
     return (
         <BookingStyled>

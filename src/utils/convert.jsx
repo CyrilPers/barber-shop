@@ -11,7 +11,6 @@ export const convertDate = (date, type = "menu") => {
     const dateObj = new Date(date);
 
     if (type === "menu") {
-        console.log('menu');
         let year = dateObj.getFullYear()
         // Check if date and month have 1 figure number, if have 1 figure we add 0 at start to get 2 figures number.
         let month = (dateObj.getMonth() + 1).toString().length === 1 ? (dateObj.getMonth() + 1).toString().padStart(2, '0') : dateObj.getMonth() + 1;
@@ -19,8 +18,6 @@ export const convertDate = (date, type = "menu") => {
         return day + "/" + month + "/" + year
     }
     if (type === "calendar") {
-        console.log('calendar');
-
         const day = dateObj.getDate()
         const options = { weekday: 'long', month: 'short' };
         const dateParts = dateObj.toLocaleDateString('fr-FR', options).split(' ');
