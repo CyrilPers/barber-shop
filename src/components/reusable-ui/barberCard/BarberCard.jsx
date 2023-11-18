@@ -2,7 +2,7 @@ import React from 'react'
 import styled, { css } from 'styled-components';
 import BarberPic from './BarberPic';
 import { theme } from '../../../theme';
-import { getFirstLetter } from '../../../utils/convert';
+import { getFirstLetter } from '../../../utils/helpers.jsx';
 
 export default function BarberCard({ name, isSelected, onClick }) {
 
