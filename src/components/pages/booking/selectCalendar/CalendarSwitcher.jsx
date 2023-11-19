@@ -1,7 +1,6 @@
 import React from 'react'
-import styled from 'styled-components';
-import { GrNext, GrPrevious } from "react-icons/gr";
-
+import styled from 'styled-components'
+import { GrNext, GrPrevious } from "react-icons/Gr"
 export default function CalendarSwitcher({ handleNext, handlePrev, page }) {
     return (
         <CalendarSwitcherStyled>
