@@ -13,10 +13,12 @@ export const getFirstLetter = (string) => {
 }
 
 export const getWeek = (calendar, weeks = 0) => {
-    const currentDate = Date.now()
+    const currentDate = new Date()
+    // Set hours to 0 to get day at 00:00 and avoid jumping 2 days instead of 1
+    const today = currentDate.setHours(0, 0, 0, 0)
     const oneDay = 24 * 60 * 60 * 1000 // 1 day in milliseconds
     const oneWeek = 7 * oneDay
-    const fromDate = currentDate + weeks * oneWeek + oneDay
+    const fromDate = today + weeks * oneWeek + oneDay
     const toDate = fromDate + oneWeek
 
     const filteredCalendar = calendar.filter(
