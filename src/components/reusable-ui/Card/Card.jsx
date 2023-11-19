@@ -17,7 +17,7 @@ const CardStyled = styled.div`
 display: flex;
 width: 100%;
 box-sizing: border-box;
-padding: 15px 5%;
+padding: 15px 50px;
 display: flex;
 justify-content: space-between;
 /* border-bottom: 1px solid ${theme.colors.greyLight}; */

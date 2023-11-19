@@ -51,7 +51,7 @@ justify-content: space-between;
         color: ${theme.colors.lowBlack};
     }
     .stop {
-        cursor: default;
+        cursor: not-allowed;
         .switcher-icon{
         opacity: 0.2;
         }

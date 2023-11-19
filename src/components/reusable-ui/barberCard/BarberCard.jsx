@@ -15,6 +15,7 @@ export default function BarberCard({ name, isSelected, onClick }) {
     )
 }
 const BarberCardStyled = styled.div`
+cursor: pointer;
 display: flex;
 justify-content: space-between;
 align-items: center;
