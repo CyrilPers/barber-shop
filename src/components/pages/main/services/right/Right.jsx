@@ -13,6 +13,7 @@ export default function Right() {
 }
 
 const RightStyled = styled.section`
+margin-top: 40px;
 width: 30%;
 box-sizing: border-box;
 padding-left: 20px;
