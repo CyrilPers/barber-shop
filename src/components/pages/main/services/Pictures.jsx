@@ -3,11 +3,15 @@ import styled from 'styled-components';
 import { theme } from '../../../../theme';
 import RightTop from './pictures/RightTop.jsx'
 import RightBottom from './pictures/RightBottom.jsx'
-
+import { motion } from 'framer-motion'
 
 export default function Pictures() {
     return (
-        <PicturesStyled>
+        <PicturesStyled as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 1 }}>
             <img className="main-pic" src="../../../../../images/shop1.jpg" alt="pic1" />
             <div className='right'>
                 <RightTop />

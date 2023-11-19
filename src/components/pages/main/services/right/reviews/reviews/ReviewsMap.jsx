@@ -3,6 +3,7 @@ import ReviewCard from './ReviewCard.jsx/ReviewCard';
 import styled from 'styled-components';
 import { theme } from '../../../../../../../theme';
 import { convertDate } from '../../../../../../../utils/convert';
+import { motion } from 'framer-motion'
 
 
 export default function ReviewsMap({ min, max, reviews }) {
@@ -11,7 +12,13 @@ export default function ReviewsMap({ min, max, reviews }) {
         <ReviewsMapStyled>
             {reviews.slice(min, max).map(({ id, description, rating, date }) => {
                 return (
-                    <div className="review-card">
+                    <motion.div
+                        key={id}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 0.5 }}
+                        className="review-card">
                         <ReviewCard
                             key={id}
                             description={description}
@@ -21,10 +28,10 @@ export default function ReviewsMap({ min, max, reviews }) {
                         <div className='border-parent'>
                             <div className='border' />
                         </div>
-                    </div>
+                    </motion.div>
                 )
             })}
-        </ReviewsMapStyled>
+        </ReviewsMapStyled >
     )
 }
 

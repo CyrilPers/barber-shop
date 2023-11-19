@@ -3,6 +3,7 @@ import { useNavigate, useParams } from 'react-router-dom';
 import styled from 'styled-components';
 import { theme } from '../../theme';
 import Button from '../reusable-ui/Button.jsx'
+import { motion } from 'framer-motion'
 
 export default function Profil() {
 
@@ -14,7 +15,10 @@ export default function Profil() {
   }
 
   return (
-    <ProfilStyled>
+    <ProfilStyled as={motion.div}
+      initial={{ x: 300 }}
+      animate={{ x: 0 }}
+      transition={{ duration: 0.5 }}>
       <Button className="disconnect btn default" label="Se déconnecter" onClick={handleClick} />
     </ProfilStyled>
   )

@@ -38,6 +38,7 @@ const extraPrimaryStyle = css`
     color: ${theme.colors.lowBlack};
     background-color: ${theme.colors.greyLight};
     border: 1px solid ${theme.colors.lowBlack};
+    transform: scale(1.05);
     transition: all 200ms ease-out;
   }
   &:active {
