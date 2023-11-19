@@ -7,12 +7,13 @@ import CalendarSwitcher from './CalendarSwitcher';
 import BookingContext from '../../../../context/BookingContext';
 import { useNavigate, useParams } from 'react-router-dom';
 import { addItemToArray, isEmpty } from '../../../../utils/array';
+import { motion } from 'framer-motion'
 
-export default function ChooseDateTime({ calendar }) {
+
+export default function ChooseDateTime({ calendar, setPage, page }) {
 
     const navigate = useNavigate()
     const { username } = useParams()
-    const [page, setPage] = useState(0)
     const { setSelectedService, selectedService, selectedBarber, bookedServices, setBookedServices, setSelectedBarber, setCalendar } = useContext(BookingContext)
     const filteredCalendar = getWeek(calendar, page)
 
@@ -49,14 +50,20 @@ export default function ChooseDateTime({ calendar }) {
             {!isEmpty(filteredCalendar) && <CalendarSwitcher handleNext={handleNext} handlePrev={handlePrev} page={page} />} {/*Show switchers only if calendar is shown */}
             {filteredCalendar.map(({ date, events }) => {
                 return (
-                    <div className="calendarCard">
+                    <motion.div
+                        key={date}
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        transition={{ duration: 1 }}
+                        className="calendarCard">
                         <CalendarCard
                             key={date}
                             date={date}
                             events={events}
                             handleClick={handleClick}
                         />
-                    </div>
+                    </motion.div>
                 )
             })}
 
