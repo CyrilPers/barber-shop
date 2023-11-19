@@ -39,6 +39,7 @@ export default function ReviewsMap({ iniX, exitX, min, max, reviews }) {
 
 
 const ReviewsMapStyled = styled.div`
+overflow:hidden;
 .border-parent {
     display: flex;
     justify-content: center;
