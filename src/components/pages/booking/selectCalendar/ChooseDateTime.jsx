@@ -28,7 +28,7 @@ export default function ChooseDateTime({ calendar }) {
 
     const handleClick = (date, time) => {
         const event = {
-            "id": new Date(),
+            "id": Date.now(),
             "service": selectedService.name,
             "price": selectedService.price,
             "barber": selectedBarber.name,
@@ -44,7 +44,6 @@ export default function ChooseDateTime({ calendar }) {
         navigate(`/accueil/${username}`);
     }
 
-    console.log('booked', bookedServices);
     return (
         <ChooseDateTimeStyled>
             {!isEmpty(filteredCalendar) && <CalendarSwitcher handleNext={handleNext} handlePrev={handlePrev} page={page} />} {/*Show switchers only if calendar is shown */}
