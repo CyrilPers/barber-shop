@@ -7,7 +7,6 @@ export default function BookedServicesList({ bookedServices, handleDeleteBooked 
     return (
         <BookedServicesListStyled>
             {bookedServices.map((bookedService) => {
-                console.log('bookedService.id', bookedService);
                 return (
                     <div className="">
                         <BookedCard
