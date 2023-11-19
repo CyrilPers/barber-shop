@@ -2,31 +2,27 @@ import React from 'react'
 import styled from 'styled-components';
 import { GrLinkNext, GrLinkPrevious } from 'react-icons/Gr'
 import { theme } from '../../../../../../../theme';
+import { motion } from 'framer-motion';
 
-export default function ReviewSwitcher({ setMin, min, setMax, max, reviews }) {
-
-    const stopNext = max > reviews.length
-    const stopPrevious = min === 0
-
-    const handlenext = () => {
-        if (!stopNext) {
-            setMin(min + 5)
-            setMax(max + 5)
-        }
-    }
-    const handlePrevious = () => {
-        if (!stopPrevious) {
-            setMin(min - 5)
-            setMax(max - 5)
-        }
-    }
+export default function ReviewSwitcher({ stopNext, stopPrevious, handlenext, handlePrevious }) {
 
     return (
         <ReviewSwitcherStyled>
-            <div className={`switcher ${stopPrevious && "stop"}`} onClick={handlePrevious}><GrLinkPrevious className='switcher-icon' /> <span>Page précédente</span></div>
-            <div className={`switcher ${stopNext && "stop"}`} onClick={handlenext}><span>Page suivante</span> <GrLinkNext className='switcher-icon' /></div>
+            <motion.div {...(!stopPrevious && { whileTap: { scale: 0.8 }, whileHover: { scale: 1.1 } })}
+                className={`switcher ${stopPrevious && "stop"}`}
+                onClick={handlePrevious}
+            >
+                <GrLinkPrevious className='switcher-icon' /> <span>Page précédente</span>
+            </motion.div>
+
+            <motion.div {...(!stopNext && { whileTap: { scale: 0.8 }, whileHover: { scale: 1.1 } })}
+                className={`switcher ${stopNext && "stop"}`}
+                onClick={handlenext}
+            >
+                <span>Page suivante</span> <GrLinkNext className='switcher-icon' />
+            </motion.div>
         </ReviewSwitcherStyled>
-    )
+    );
 }
 
 const ReviewSwitcherStyled = styled.div`

@@ -1,10 +1,11 @@
 import React from 'react'
 import { theme } from '../../../../theme';
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 export default function TimeCard({ time, onClick }) {
     return (
-        <TimeCardStyled onClick={onClick}>
+        <TimeCardStyled onClick={onClick} as={motion.div} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             {time}
         </TimeCardStyled>
     )

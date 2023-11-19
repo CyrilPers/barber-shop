@@ -1,9 +1,10 @@
 import styled, { css } from "styled-components"
 import { theme } from '../../theme'
+import { motion } from "framer-motion"
 
 export default function Button({ label, Icon, className, version = "default", onClick }) {
   return (
-    <ButtonStyled className={className} version={version} onClick={onClick}>
+    <ButtonStyled as={motion.button} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }} className={className} version={version} onClick={onClick}>
       <span>{label}</span>
       <div className="icon">{Icon && Icon}</div>
     </ButtonStyled>
@@ -38,8 +39,6 @@ const extraPrimaryStyle = css`
     color: ${theme.colors.lowBlack};
     background-color: ${theme.colors.greyLight};
     border: 1px solid ${theme.colors.lowBlack};
-    transform: scale(1.05);
-    transition: all 200ms ease-out;
   }
   &:active {
     background-color: ${theme.colors.lowBlack};
