@@ -6,13 +6,14 @@ import CalendarCard from './CalendarCard';
 import CalendarSwitcher from './CalendarSwitcher';
 import BookingContext from '../../../../context/BookingContext';
 import { useNavigate, useParams } from 'react-router-dom';
+import { addItemToArray, isEmpty } from '../../../../utils/array';
 
 export default function ChooseDateTime({ calendar }) {
 
     const navigate = useNavigate()
     const { username } = useParams()
     const [page, setPage] = useState(0)
-    const { setSelectedService, selectedService, selectedBarber, bookedServices, setBookedServices } = useContext(BookingContext)
+    const { setSelectedService, selectedService, selectedBarber, bookedServices, setBookedServices, setSelectedBarber, setCalendar } = useContext(BookingContext)
     const filteredCalendar = getWeek(calendar, page)
 
     const handleNext = () => {
@@ -26,26 +27,27 @@ export default function ChooseDateTime({ calendar }) {
     }
 
     const handleClick = (date, time) => {
-        console.log('date', date);
-        console.log('time', time);
         const event = {
+            "id": new Date(),
             "service": selectedService.name,
-            "prix": selectedService.prix,
+            "price": selectedService.price,
             "barber": selectedBarber.name,
             "date": date,
             "time": time,
         }
         let bookedServicesCopy = deepClone(bookedServices)
-        bookedServicesCopy.push(event)
+        bookedServicesCopy = addItemToArray(event, bookedServicesCopy)
         setBookedServices(bookedServicesCopy)
         setSelectedService(null)
+        setSelectedBarber(null)
+        setCalendar([])
         navigate(`/accueil/${username}`);
     }
 
     console.log('booked', bookedServices);
     return (
         <ChooseDateTimeStyled>
-            {filteredCalendar.length !== 0 && <CalendarSwitcher handleNext={handleNext} handlePrev={handlePrev} page={page} />} {/*Show switchers only if calendar is shown */}
+            {!isEmpty(filteredCalendar) && <CalendarSwitcher handleNext={handleNext} handlePrev={handlePrev} page={page} />} {/*Show switchers only if calendar is shown */}
             {filteredCalendar.map(({ date, events }) => {
                 return (
                     <div className="calendarCard">

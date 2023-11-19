@@ -5,13 +5,16 @@ import Header from './services/Header.jsx';
 import Pictures from './services/Pictures.jsx';
 import Main from './services/Main.jsx';
 import Title from './services/Title';
+import BookedServices from './services/left/bookedServices.jsx/BookedServices.jsx';
+import { isEmpty } from '../../../utils/array.jsx';
 
-export default function Services() {
+export default function Services({ bookedServices, setBookedServices }) {
 
   return (
     <ServicesStyled>
       <Header />
       <Pictures />
+      {!isEmpty(bookedServices) && <BookedServices bookedServices={bookedServices} setBookedServices={setBookedServices} />}
       <Title />
       <Main />
     </ServicesStyled>
