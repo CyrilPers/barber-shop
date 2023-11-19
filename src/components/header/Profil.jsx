@@ -7,7 +7,6 @@ import { motion } from 'framer-motion'
 
 export default function Profil() {
 
-  const { username } = useParams();
   const navigate = useNavigate();
 
   const handleClick = () => {
