@@ -1,3 +1,6 @@
+import { capitalizeFirstLetter } from './helpers.jsx';
+
+
 export const convertTime = (time) => {
     let hours = Math.floor(time / 60)
     let min = time % 60
@@ -23,6 +26,12 @@ export const convertDate = (date, type = "menu") => {
         const dateParts = dateObj.toLocaleDateString('fr-FR', options).split(' ');
         dateParts.push(day);
         return dateParts
+    }
+    if (type === "booked") {
+        const day = dateObj.getDate()
+        const options = { weekday: 'long', month: 'short' };
+        const dateParts = dateObj.toLocaleDateString('fr-FR', options).split(' ');
+        return capitalizeFirstLetter(dateParts[1]) + " " + day + " " + capitalizeFirstLetter(dateParts[0])
     }
 }
 
