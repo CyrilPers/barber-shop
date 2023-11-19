@@ -20,18 +20,17 @@ export const convertDate = (date, type = "menu") => {
         let day = dateObj.getDate().toString().length === 1 ? dateObj.getDate().toString().padStart(2, '0') : dateObj.getDate();
         return day + "/" + month + "/" + year
     }
-    if (type === "calendar") {
+    else {
         const day = dateObj.getDate()
         const options = { weekday: 'long', month: 'short' };
         const dateParts = dateObj.toLocaleDateString('fr-FR', options).split(' ');
-        dateParts.push(day);
-        return dateParts
-    }
-    if (type === "booked") {
-        const day = dateObj.getDate()
-        const options = { weekday: 'long', month: 'short' };
-        const dateParts = dateObj.toLocaleDateString('fr-FR', options).split(' ');
-        return capitalizeFirstLetter(dateParts[1]) + " " + day + " " + capitalizeFirstLetter(dateParts[0])
+        if (type === "calendar") {
+            dateParts.push(day);
+            return dateParts
+        }
+        if (type === "booked") {
+            return capitalizeFirstLetter(dateParts[1]) + " " + day + " " + capitalizeFirstLetter(dateParts[0])
+        }
     }
 }
 
