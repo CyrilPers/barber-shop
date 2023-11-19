@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState } from 'react'
 import Title from '../../reusable-ui/Title';
 import { theme } from '../../../theme';
 import styled from 'styled-components';
@@ -10,8 +10,10 @@ import ChooseDateTime from './selectCalendar/ChooseDateTime.jsx';
 export default function Booking() {
 
     const { calendar, setCalendar, selectedService, setSelectedService, selectedBarber, setSelectedBarber } = useContext(BookingContext)
+    const [page, setPage] = useState(0)
 
     const handleClick = (barber) => {
+        setPage(0)
         setSelectedBarber(barber)
         setCalendar(barber.calendar)
     }
@@ -20,9 +22,9 @@ export default function Booking() {
         <BookingStyled>
             <Title />
             <Step number={1} title={"Prestation sélectionnée"} />
-            <ChooseBarber handleClick={handleClick} selectedBarber={selectedBarber} setSelectedBarber={setSelectedBarber} selectedService={selectedService} setSelectedService={setSelectedService} />
+            <ChooseBarber setCalendar={setCalendar} handleClick={handleClick} selectedBarber={selectedBarber} setSelectedBarber={setSelectedBarber} selectedService={selectedService} setSelectedService={setSelectedService} />
             <Step number={2} title={"Choix de la date & heure"} />
-            <ChooseDateTime calendar={calendar} />
+            <ChooseDateTime calendar={calendar} page={page} setPage={setPage} />
         </BookingStyled>
     )
 }

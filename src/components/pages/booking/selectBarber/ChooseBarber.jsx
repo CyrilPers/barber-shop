@@ -4,12 +4,12 @@ import SelectedService from './SelectedService';
 import styled from 'styled-components';
 import { theme } from '../../../../theme';
 
-export default function ChooseBarber({ selectedBarber, setSelectedService, selectedService, handleClick }) {
+export default function ChooseBarber({ setCalendar, setSelectedBarber, selectedBarber, setSelectedService, selectedService, handleClick }) {
 
 
     return (
         <ChooseBarberStyled>
-            <SelectedService selectedService={selectedService} setSelectedService={setSelectedService} />
+            <SelectedService setCalendar={setCalendar} setSelectedBarber={setSelectedBarber} selectedService={selectedService} setSelectedService={setSelectedService} />
             <span className='who'>Avec qui ?</span>
             <BarberList selectedBarber={selectedBarber} handleClick={handleClick} />
         </ChooseBarberStyled>
