@@ -17,7 +17,7 @@ export default function Profil() {
     <ProfilStyled as={motion.div}
       initial={{ x: 300 }}
       animate={{ x: 0 }}
-      transition={{ duration: 0.5 }}>
+      transition={{ duration: 1 }}>
       <Button className="disconnect btn default" label="Se déconnecter" onClick={handleClick} />
     </ProfilStyled>
   )

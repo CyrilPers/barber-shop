@@ -10,7 +10,7 @@ export default function Logo({ className, onClick }) {
     <LogoStyled className={className} onClick={onClick} as={motion.div}
       initial={{ x: -300 }}
       animate={{ x: 0 }}
-      transition={{ duration: 0.5 }}>
+      transition={{ duration: 1 }}>
       <h1>MONTPL</h1>
       <img src='/images/logo.png' alt="logo" />
       <h1>BARBER</h1>
