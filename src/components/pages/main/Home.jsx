@@ -33,7 +33,7 @@ export default function Main() {
     <BookingContext.Provider value={BookingContextValue}>
       <MainStyled>
         <Navbar />
-        {!selectedService && <Services bookedServices={bookedServices} setBookedServices={setBookedServices} />}
+        {!selectedService && <Services />}
         {selectedService && <Booking />}
         <Footer />
       </MainStyled>
