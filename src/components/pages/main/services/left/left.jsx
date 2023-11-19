@@ -29,4 +29,5 @@ export default function Left() {
 const LeftStyled = styled.section`
 box-sizing: border-box;
 padding-right: 20px;
+width: 70%;
 `;
