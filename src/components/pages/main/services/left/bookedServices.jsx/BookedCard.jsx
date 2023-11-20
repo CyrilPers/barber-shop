@@ -2,12 +2,11 @@ import React from 'react'
 import styled from 'styled-components';
 import { theme } from '../../../../../../theme';
 import BookedInfos from './BookedInfos';
-import Button from '../../../../../reusable-ui/Button.jsx'
 import { motion } from 'framer-motion'
 
 export default function BookedCard({ bookedService, handleDeleteBooked }) {
     return (
-        <BookedCardStyled>
+        <BookedCardStyled >
             <BookedInfos {...bookedService} />
             <motion.span className='delete' onClick={() => handleDeleteBooked(bookedService.id)} whileTap={{ scale: 0.8 }} whileHover={{ scale: 1.1, color: "red" }}>Annuler</motion.span>
         </BookedCardStyled>
