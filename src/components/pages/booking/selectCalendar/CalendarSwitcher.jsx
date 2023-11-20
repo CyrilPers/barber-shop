@@ -20,6 +20,9 @@ display: flex;
     cursor: pointer;
     width: 25px;
     height: 25px;
+    &:hover {
+        transform: scale(1.5)
+    }
 }
 
 .previous{
@@ -29,6 +32,9 @@ display: flex;
 .stop{
     cursor: not-allowed;
     opacity: 0.2;
+    &:hover {
+        transform: scale(1)
+    }
 }
 .next{
     position: absolute;
