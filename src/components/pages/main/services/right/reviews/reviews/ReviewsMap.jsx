@@ -6,7 +6,7 @@ import { convertDate } from '../../../../../../../utils/convert';
 import { AnimatePresence, motion } from 'framer-motion'
 
 
-export default function ReviewsMap({ iniX, exitX, min, max, reviews }) {
+export default function ReviewsMap({ iniX, min, max, reviews }) {
 
     return (
         <ReviewsMapStyled>
@@ -15,10 +15,10 @@ export default function ReviewsMap({ iniX, exitX, min, max, reviews }) {
                     <AnimatePresence mode="popLayout">
                         <motion.div
                             key={id}
-                            initial={{ opacity: 0, x: iniX }}
-                            animate={{ opacity: 1, x: 0 }}
-                            // exit={{ opacity: 0, x: exitX }}
-                            transition={{ duration: 0.5 }}
+                            initial={{ x: iniX }}
+                            animate={{ x: 0 }}
+                            // exit={{ x: exitX }}
+                            transition={{ ease: 'easeInOut', duration: 0.5 }}
                             className="review-cards">
                             <ReviewCard
                                 key={id}

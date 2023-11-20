@@ -6,6 +6,7 @@ import BookingContext from '../../../context/BookingContext.jsx'
 import ChooseBarber from './selectBarber/ChooseBarber.jsx';
 import Step from '../../reusable-ui/booking/Step.jsx';
 import ChooseDateTime from './selectCalendar/ChooseDateTime.jsx';
+import { motion } from 'framer-motion';
 
 export default function Booking() {
 
@@ -19,7 +20,12 @@ export default function Booking() {
     }
 
     return (
-        <BookingStyled>
+        <BookingStyled as={motion.div}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.5 }}
+        >
             <Title />
             <Step number={1} title={"Prestation sélectionnée"} />
             <ChooseBarber setCalendar={setCalendar} handleClick={handleClick} selectedBarber={selectedBarber} setSelectedBarber={setSelectedBarber} selectedService={selectedService} setSelectedService={setSelectedService} />

@@ -9,6 +9,7 @@ import BookingContext from '../../../context/BookingContext.jsx';
 import { useBarbers } from '../../../hooks/useBarbers.jsx';
 import { useBooked } from '../../../hooks/useBooked.jsx';
 import { useCalendar } from '../../../hooks/useCalendar.jsx';
+import { motion } from 'framer-motion';
 
 
 export default function Main() {
@@ -31,7 +32,12 @@ export default function Main() {
 
   return (
     <BookingContext.Provider value={BookingContextValue}>
-      <MainStyled>
+      <MainStyled as={motion.div}
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}
+        transition={{ duration: 0.5 }}
+      >
         <Navbar />
         {!selectedService && <Services />}
         {selectedService && <Booking />}

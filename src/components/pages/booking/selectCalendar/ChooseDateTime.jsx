@@ -17,19 +17,16 @@ export default function ChooseDateTime({ calendar, setPage, page }) {
     const { setSelectedService, selectedService, selectedBarber, bookedServices, setBookedServices, setSelectedBarber, setCalendar } = useContext(BookingContext)
     const filteredCalendar = getWeek(calendar, page)
     const [iniX, setIniX] = useState()
-    const [exitX, setExitX] = useState()
 
     const handleNext = () => {
         setPage(page + 1)
-        setIniX(-300)
-        setExitX(300)
+        setIniX(300)
     }
 
     const handlePrev = () => {
         if (page >= 1) {
             setPage(page - 1)
-            setIniX(300)
-            setExitX(-300)
+            setIniX(-300)
         }
     }
 
@@ -59,10 +56,9 @@ export default function ChooseDateTime({ calendar, setPage, page }) {
                     <AnimatePresence mode="popLayout">
                         <motion.div
                             key={date}
-                            initial={{ opacity: 0, x: iniX }}
-                            animate={{ opacity: 1, x: 0 }}
-                            // exit={{ opacity: 0, x: exitX }}
-                            transition={{ duration: 0.5 }}
+                            initial={{ x: iniX }}
+                            animate={{ x: 0 }}
+                            transition={{ ease: 'easeInOut', duration: 0.5 }}
                             className="calendarCard">
                             <CalendarCard
                                 key={date}
@@ -74,9 +70,7 @@ export default function ChooseDateTime({ calendar, setPage, page }) {
                     </AnimatePresence>
                 )
             })}
-
-
-        </ChooseDateTimeStyled>
+        </ChooseDateTimeStyled >
     )
 };
 
