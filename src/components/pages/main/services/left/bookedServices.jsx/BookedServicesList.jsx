@@ -26,7 +26,7 @@ export default function BookedServicesList({ bookedServices, handleDeleteBooked 
 
 const BookedServicesListStyled = styled.div`
 margin-top: 10px;
-
+border: 2px solid ${theme.colors.lowBlack};
 box-shadow: ${theme.shadows.medium};
 border-radius: ${theme.borderRadius.midRound};
 background-color: white;
