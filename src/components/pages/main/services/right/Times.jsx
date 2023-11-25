@@ -6,7 +6,7 @@ import TimesBlock from './times/TimesBlock';
 export default function Times() {
     return (
         <TimesStyled>
-            <h1>Horraires d'ouverture</h1>
+            <h1>Horaires d'ouverture</h1>
             <TimesBlock />
         </TimesStyled>
     )
