@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+schedule.json
+src/utils/generateCalendar.js
+.gitignore
