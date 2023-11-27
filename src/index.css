@@ -9,6 +9,11 @@
   src: url('./assets/fonts/BagelFatOne-Regular.ttf') format('truetype');
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+
 body {
   user-select: none;
   margin: 0;
